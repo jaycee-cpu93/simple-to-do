@@ -40,8 +40,8 @@ export default function App() {
       </form>
 
       <div>
-        {todos.map((todo) => (
-          <p>{todo.name}</p>
+        {todos.map((todo, index) => (
+          <p key={index}>{todo.name}</p>
         ))}
       </div>
     </div>
